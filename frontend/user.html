@@ -4,17 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Profile</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
 </head>
 <body class="user-page">
     <header>
     </header>
     
     <main>
+        <div class="top-section">
+          <div class="page-title">
+            <h1>User Profile</h1>
+          </div>
+    
+          <div class="homepage-navbar" data-include="homepage-navbar">
+            <script src="{{url_for('static', filename='components/userPageNavbar.js')}}"></script>
+          </div>
+        </div>
+
         <section class="user-profile">
             <h2>User Profile</h2>
             <div class="profile-info">
-                <img src="assets/pfp.PNG" alt="User Avatar" class="avatar">
+                <img src="{{url_for('static', filename='assets/pfp.PNG')}}" alt="User Avatar" class="avatar">
                 <h3>Username</h3>
                 <p>Joined: January 2025</p>
             </div>

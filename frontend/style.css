@@ -9,6 +9,10 @@
     background-color: var(--light-gray);
 } */
 
+main {
+    width: 100%;
+}
+
 .login-page {
     font-family: Arial, sans-serif;
     display: flex;
@@ -95,33 +99,61 @@ h1 {
     margin: 0;
     padding: 0;
     color: white;
-  }
-  
-  .games-container {
+}
+
+.games-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     padding: 20px;
-  }
-  
-  .game-card {
+}
+
+.game-card {
     width: 200px;
     background-color: var(--dark-gray);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     text-align: center;
-  }
-  
-  .game-card img {
+}
+
+.game-card img {
     width: 100%;
     height: 250px;
     object-fit: cover;
-  }
-  
-  .game-card .title {
+}
+
+.game-card .title {
     padding: 10px;
     font-weight: bold;
-  }
-  
+}
+
+
+/* navbar */
+
+.navbar-div {
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    padding-top: 5px;
+    background-color: grey;
+}
+
+.navbar-button {
+    width: 20%;
+    height: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 15px;
+    margin-right: 15px;
+    border: none;
+    border-radius: 8px;
+    text-transform: capitalize;
+    background-color: #803e0b;
+    transition-duration: 0.3s;
+}
+
+.navbar-button:hover {
+    background-color: #612f08;
+}
