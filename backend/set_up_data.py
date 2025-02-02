@@ -7,7 +7,7 @@ homepage_file = "homepage.html"
 trending_games_file = ""
 
 ### User page
-user_page_file = "userpage.html"
+user_page_file = "user.html"
 custom_lists_file = ""
 game_statistics_file = ""
 

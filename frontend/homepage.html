@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trending Video Games</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
 </head>
 <body class="homepage">
   <header>
@@ -14,14 +14,20 @@
 
 
   <main>
+    <div class="top-section">
+      <div class="page-title">
+        <h1>Trending Games!</h1>
+      </div>
 
+      <div class="homepage-navbar" data-include="homepage-navbar">
+        <script src="{{url_for('static', filename='components/homepageNavbar.js')}}"></script>
+      </div>
+    </div>
 
-
-    <h1>Trending Games!</h1>
     <div class="games-container">
       <!-- Game Card 1 -->
       <div class="game-card">
-        <img src="assets/The_Legend_of_Zelda_Breath_of_the_Wild.jpg" alt="The Legend of Zelda: Breath of the Wild">
+        <img src="{{url_for('static', filename='assets/The_Legend_of_Zelda_Breath_of_the_Wild.jpg')}}" alt="The Legend of Zelda: Breath of the Wild">
         <div class="title">The Legend of Zelda: Breath of the Wild</div>
       </div>
 

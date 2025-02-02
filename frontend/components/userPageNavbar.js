@@ -1,15 +1,7 @@
 document.write(
-    <div name="user_page_navbar" id="user_page_navbar">
-        <input type="submit" name="player_profile" value="player_profile">
-            Player Profile
-        </input>
-
-        <input type="submit" name="custom_lists" value="custom_lists">
-            Custom Lists
-        </input>
-
-        <input type="submit" name="game_statistics" value="game_statistics">
-            Game Statistics
-        </input>
-    </div>
+    '<div class="navbar-div">\
+        <input type="submit" class="navbar-button" name="profile" value="Profile"></input>\
+        <input type="submit" class="navbar-button" name="custom_lists" value="Custom Lists"></input>\
+        <input type="submit" class="navbar-button" name="user_statistics" value="User Statistics"></input>\
+    </div>'
 );

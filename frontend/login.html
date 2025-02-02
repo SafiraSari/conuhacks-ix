@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
 </head>
 <body class="login-page">
     <div class="login-container">
         <h1>Sign in to GAME</h1>
-        <form>
+        <form action="/login" method="POST" enctype="application/x-www-form-urlencoded">
             <div class="input-group">
-                <input type="text" placeholder="Username" required>
+                <input type="text" placeholder="Username" name="login_username" required>
             </div>
             <div class="input-group">
-                <input type="password" placeholder="Password" required>
+                <input type="password" placeholder="Password" name="login_password" required>
             </div>
             <button type="submit" class="login-btn">Login</button>
         </form>
